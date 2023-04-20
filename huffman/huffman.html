@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Huffman Encoding in JavaScript</title>
+     <link rel="stylesheet" href="/huffman/huffman.css">
+    <script src="/huffman/huffman.js"></script>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px rgb(255, 255, 255) solid;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav "> 
+      <div class="container-nav">
+          <div class="nav-row">
+
+              <ul class="nav-list">
+                  <li class="nav-list__item"><a href="../bool/index.html" class="nav-list__link ">Булевые функции</a></li>
+                  <li class="nav-list__item"><a href="./huffman.html" class="nav-list__link nav-list__link--active">Алг.Хоффмана</a></li> 
+                  <li class="nav-list__item"><a href="../fano/fano.html" class="nav-list__link">Алг.Фано</a> </li>
+              </ul>
+          </div>
+       
+  </nav>
+    Введите текст:<br />
+    <input type="text" id="input" value="ОГУ" />
+    <button onclick="onButtonClick()">Старт</button><br />
+    Выберите систему:
+    <input type="radio" id="binary" name="base" value="binary" checked />
+    <label for="binary">двоичная</label>
+    <input type="radio" id="ternary" name="base" value="ternary" />
+    <label for="ternary">троичная</label><br />
+    Хоффман имеет вид:
+    <span id="output" style="font-family: monospace"></span><br />
+    <span
+      id="diagramSpan"
+      style="display: block; width: 100%; height: 50%; overflow: scroll"
+    >
+      <svg id="tree"></svg> </span
+    ><br />
+    <table id="table"></table>
+    <br />
+    <div class="dispay">
+
+      Средняя длина символа в коде Хаффмана составляет
+      <span id="avgLength">0</span> бит<br />
+      Средняя длина символа в коде равной длины равна
+      <span id="bitsInEqualCode">0</span> бит<br />
+      Энтропия Шеннона входной строки равна <span id="entropy">0</span> бит
+      <br />
+      Энтропия столкновений входной строки равна
+      <span id="collision_entropy">0</span> бит.<br />
+      <br />
+    </div>
+    
+</html>

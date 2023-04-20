@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Truth Table</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav class="nav "> 
+      <div class="container-nav">
+          <div class="nav-row">
+
+              <ul class="nav-list">
+                  <li class="nav-list__item"><a href="./bool/index.html" class="nav-list__link nav-list__link--active">Булевые функции</a></li>
+                  <li class="nav-list__item"><a href="../huffman/huffman.html" class="nav-list__link">Алг.Хоффмана</a></li> 
+                  <li class="nav-list__item"><a href="../fano/fano.html" class="nav-list__link">Алг.Фано</a> </li>
+              </ul>
+          </div>
+       
+  </nav>
+    <div class="container">
+        <h1>БУЛЕВЫЕ ФУНКЦИИ:</h1>
+        <div class="main">
+            <div class="main-show">
+
+                    <select id="functionSelect">
+                        <option value="OR">ИЛИ</option>
+                        <option value="AND">И</option>
+                        <option value="NOT">НЕ</option>
+                        <option value="EQUIVALENCE">Эквива-ть</option>
+                        <option value="XOR">иск ИЛИ</option>
+                        <option value="NAND">НЕ И</option>
+                        <option value="NOR">НЕ ИЛИ</option>
+                    </select>
+                <br><br>
+                <button onclick="showTable()">Готово</button>
+                <br><br>
+            
+            </div>
+            <table id="truthTable">
+            </table>
+        </div>
+    </div>
+    
+<script src="./main.js"></script>
+  </body>
+</html>
